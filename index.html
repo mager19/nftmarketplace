@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="./src/output.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container">
+			<nav id="menu" class="px-4 py-12 bg-background">
+				<ul class="flex flex-col gap-8 xl:gap-8">
+					<li>
+						<a
+							class="px-4 text-white text-base-workSans hover:text-calltoaction"
+							href="#"
+							>Marketplace</a
+						>
+					</li>
+					<li>
+						<a
+							class="px-4 text-white text-base-workSans hover:text-calltoaction"
+							href="#"
+							>Rankings</a
+						>
+					</li>
+					<li>
+						<a
+							class="px-4 text-white text-base-workSans hover:text-calltoaction"
+							href="#"
+							>Collect a wallet</a
+						>
+					</li>
+					<li>
+						<a class="text-base-workSans btn btn--tertary" href="#">
+							<img src="assets/user.svg" alt="user" />
+							<span>Sign Up</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<div id="panel" class="bg-background">
+				<!-- header -->
+				<div
+					class="flex items-center justify-between w-full px-4 py-4 lg:py-8 md:py-5 bg-background"
+				>
+					<div class="w-auto lg:w-1/3 xl:w-auto logo">
+						<img
+							class="w-1/2 md:w-1/3 xl:w-1/2"
+							src="src/assets/logo.png"
+							alt="logo"
+						/>
+					</div>
+
+					<nav class="hidden w-2/3 main__menu xl:w-auto lg:flex">
+						<ul class="flex items-center gap-4 xl:gap-8">
+							<li>
+								<a
+									class="px-4 text-white text-base-workSans hover:text-calltoaction"
+									href="#"
+									>Marketplace</a
+								>
+							</li>
+							<li>
+								<a
+									class="px-4 text-white text-base-workSans hover:text-calltoaction"
+									href="#"
+									>Rankings</a
+								>
+							</li>
+							<li>
+								<a
+									class="px-4 text-white text-base-workSans hover:text-calltoaction"
+									href="#"
+									>Collect a wallet</a
+								>
+							</li>
+							<li>
+								<a class="text-base-workSans btn btn--secondary" href="#">
+									<img src="assets/user.svg" alt="user" />
+									<span>Sign Up</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="w-auto mobile__menu lg:hidden">
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M3 12C3 11.5858 3.33579 11.25 3.75 11.25H20.25C20.6642 11.25 21 11.5858 21 12C21 12.4142 20.6642 12.75 20.25 12.75H3.75C3.33579 12.75 3 12.4142 3 12Z"
+								fill="white"
+							/>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M3 6C3 5.58579 3.33579 5.25 3.75 5.25H15C15.4142 5.25 15.75 5.58579 15.75 6C15.75 6.41421 15.4142 6.75 15 6.75H3.75C3.33579 6.75 3 6.41421 3 6Z"
+								fill="white"
+							/>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M3 18C3 17.5858 3.33579 17.25 3.75 17.25H15C15.4142 17.25 15.75 17.5858 15.75 18C15.75 18.4142 15.4142 18.75 15 18.75H3.75C3.33579 18.75 3 18.4142 3 18Z"
+								fill="white"
+							/>
+						</svg>
+					</div>
+				</div>
+
+				<!-- Hero -->
+				<div class="w-full px-8 py-10 hero">
+					<h1 class="text-white text-h4-workSans">
+						Discover digital art & Collect NFTs
+					</h1>
+					<p
+						class="mt-2 font-light text-white text-base-workSans font-workSans"
+					>
+						NFT marketplace UI created with Anima for Figma. Collect, buy and
+						sell art from more than 20k NFT artists.
+					</p>
+
+					<a
+						href="#"
+						class="w-full btn btn--secondary btn--main bg-calltoaction"
+					>
+						<img src="src/assets/rocketLaunch.svg" alt="icon" />
+						<span>Get Started</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+
+	<script src="src/base.js"></script>
+</html>

@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply bg-background !important;
+}
+
+@layer components {
+	.btn {
+		@apply inline-flex items-center justify-center gap-3 text-white transition-all duration-700 ease-in-out bg-calltoaction;
+
+		img {
+			@apply transition-all duration-700 ease-in-out;
+		}
+
+		&:hover {
+			@apply bg-background;
+
+			img {
+				opacity: 0.7;
+			}
+		}
+	}
+	.btn--tertary {
+		@apply h-12 border-4 rounded-full text-base-workSans px-14 border-calltoaction;
+	}
+
+	.btn--secondary {
+		@apply h-16 px-10 border-4 rounded-3xl text-h5-workSans border-calltoaction;
+	}
+
+	.btn--primary {
+		@apply border-4 rounded-xl h-17 text-h5-workSans border-calltoaction;
+	}
+}
+
+.slideout-menu {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 256px;
+	min-height: 100vh;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	z-index: 0;
+	display: none;
+}
+
+.slideout-menu-left {
+	@apply border-r border-calltoaction;
+	left: 0;
+}
+
+.slideout-menu-right {
+	right: 0;
+}
+
+.slideout-panel {
+	position: relative;
+	z-index: 1;
+	will-change: transform;
+	min-height: 100vh;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+	overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+	display: block;
+}
