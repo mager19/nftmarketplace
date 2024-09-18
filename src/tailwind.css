@@ -27,7 +27,7 @@ body {
 	}
 
 	.btn--secondary {
-		@apply h-16 px-10 border-4 rounded-3xl text-h5-workSans border-calltoaction;
+		@apply h-16 px-10 border-4 rounded-3xl text-button border-calltoaction;
 	}
 
 	.btn--primary {
@@ -71,4 +71,10 @@ body {
 
 .slideout-open .slideout-menu {
 	display: block;
+}
+
+.space-mono-regular {
+	font-family: "Space Mono", system-ui;
+	font-weight: 400;
+	font-style: normal;
 }

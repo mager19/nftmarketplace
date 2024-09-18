@@ -7,34 +7,22 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
-			rel="stylesheet"
-		/>
+			rel="stylesheet" />
 		<link href="./src/output.css" rel="stylesheet" />
 	</head>
 	<body>
 		<div class="container">
+			<!-- mobile menu -->
 			<nav id="menu" class="px-4 py-12 bg-background">
 				<ul class="flex flex-col gap-8 xl:gap-8">
 					<li>
-						<a
-							class="px-4 text-white text-base-workSans hover:text-calltoaction"
-							href="#"
-							>Marketplace</a
-						>
+						<a class="px-4 text-white text-base-workSans hover:text-calltoaction" href="#">Marketplace</a>
 					</li>
 					<li>
-						<a
-							class="px-4 text-white text-base-workSans hover:text-calltoaction"
-							href="#"
-							>Rankings</a
-						>
+						<a class="px-4 text-white text-base-workSans hover:text-calltoaction" href="#">Rankings</a>
 					</li>
 					<li>
-						<a
-							class="px-4 text-white text-base-workSans hover:text-calltoaction"
-							href="#"
-							>Collect a wallet</a
-						>
+						<a class="px-4 text-white text-base-workSans hover:text-calltoaction" href="#">Collect a wallet</a>
 					</li>
 					<li>
 						<a class="text-base-workSans btn btn--tertary" href="#">
@@ -47,43 +35,25 @@
 
 			<div id="panel" class="bg-background">
 				<!-- header -->
-				<div
-					class="flex items-center justify-between w-full px-4 py-4 lg:py-8 md:py-5 bg-background"
-				>
-					<div class="w-auto lg:w-1/3 xl:w-auto logo">
-						<img
-							class="w-1/2 md:w-1/3 xl:w-1/2"
-							src="src/assets/logo.png"
-							alt="logo"
-						/>
+				<div class="flex items-center justify-between w-full px-8 py-4 md:px-0 lg:py-8 md:py-5 bg-background">
+					<div class="w-auto lg:w-1/4 xl:w-1/5 logo">
+						<img class="w-1/2 md:w-2/5 lg:w-full" src="src/assets/logo.png" alt="logo" />
 					</div>
 
-					<nav class="hidden w-2/3 main__menu xl:w-auto lg:flex">
+					<nav class="hidden w-2/3 main__menu xl:w-auto lg:flex lg:w-auto">
 						<ul class="flex items-center gap-4 xl:gap-8">
 							<li>
-								<a
-									class="px-4 text-white text-base-workSans hover:text-calltoaction"
-									href="#"
-									>Marketplace</a
-								>
+								<a class="px-4 text-white text-base-workSans hover:text-calltoaction" href="#">Marketplace</a>
 							</li>
 							<li>
-								<a
-									class="px-4 text-white text-base-workSans hover:text-calltoaction"
-									href="#"
-									>Rankings</a
-								>
+								<a class="px-4 text-white text-base-workSans hover:text-calltoaction" href="#">Rankings</a>
 							</li>
 							<li>
-								<a
-									class="px-4 text-white text-base-workSans hover:text-calltoaction"
-									href="#"
-									>Collect a wallet</a
-								>
+								<a class="px-4 text-white text-base-workSans hover:text-calltoaction" href="#">Collect a wallet</a>
 							</li>
 							<li>
-								<a class="text-base-workSans btn btn--secondary" href="#">
-									<img src="assets/user.svg" alt="user" />
+								<a class="text-base-workSans btn btn--secondary xl:btn--primart" href="#">
+									<img src="src/assets/user.svg" alt="user" />
 									<span>Sign Up</span>
 								</a>
 							</li>
@@ -91,54 +61,93 @@
 					</nav>
 
 					<div class="w-auto mobile__menu lg:hidden">
-						<svg
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path
 								fill-rule="evenodd"
 								clip-rule="evenodd"
 								d="M3 12C3 11.5858 3.33579 11.25 3.75 11.25H20.25C20.6642 11.25 21 11.5858 21 12C21 12.4142 20.6642 12.75 20.25 12.75H3.75C3.33579 12.75 3 12.4142 3 12Z"
-								fill="white"
-							/>
+								fill="white" />
 							<path
 								fill-rule="evenodd"
 								clip-rule="evenodd"
 								d="M3 6C3 5.58579 3.33579 5.25 3.75 5.25H15C15.4142 5.25 15.75 5.58579 15.75 6C15.75 6.41421 15.4142 6.75 15 6.75H3.75C3.33579 6.75 3 6.41421 3 6Z"
-								fill="white"
-							/>
+								fill="white" />
 							<path
 								fill-rule="evenodd"
 								clip-rule="evenodd"
 								d="M3 18C3 17.5858 3.33579 17.25 3.75 17.25H15C15.4142 17.25 15.75 17.5858 15.75 18C15.75 18.4142 15.4142 18.75 15 18.75H3.75C3.33579 18.75 3 18.4142 3 18Z"
-								fill="white"
-							/>
+								fill="white" />
 						</svg>
 					</div>
 				</div>
 
 				<!-- Hero -->
-				<div class="w-full px-8 py-10 hero">
-					<h1 class="text-white text-h4-workSans">
-						Discover digital art & Collect NFTs
-					</h1>
-					<p
-						class="mt-2 font-light text-white text-base-workSans font-workSans"
-					>
-						NFT marketplace UI created with Anima for Figma. Collect, buy and
-						sell art from more than 20k NFT artists.
-					</p>
+				<div
+					class="grid w-full grid-cols-1 px-8 py-10 mx-auto md:px-4 md:py-20 md:gap-0 place-items-start place-content-between md:grid-cols-12 hero lg:w-full xl:w-11/12">
+					<div class="md:col-span-6 hero__content">
+						<h1 class="tracking-normal text-white text-h4-workSans md:text-h3-workSans font-workSans md:max-w-[300px] lg:text-h1-workSans lg:max-w-md">
+							Discover Digital Art & Collect NFTs
+						</h1>
+						<p class="mt-3 font-light text-white md:mt-5 text-base-workSans font-workSans lg:text-body-workSans lg:max-w-lg">
+							NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.
+						</p>
 
-					<a
-						href="#"
-						class="w-full btn btn--secondary btn--main bg-calltoaction"
-					>
+						<a href="#" class="hidden mt-5 md:inline-flex bg-calltoaction btn btn--secondary btn--main">
+							<img src="src/assets/rocketLaunch.svg" alt="icon" />
+							<span>Get Started</span>
+						</a>
+
+						<div class="items-center hidden w-full gap-12 mt-4 md:flex numbers lg:mt-8 lg:gap-20">
+							<div class="flex flex-col text-white numbers__item">
+								<span class="text-h5-space font-space lg:text-h4-space">240k+</span>
+								<span class="text-base-workSans lg:text-h5-space">Total Sale</span>
+							</div>
+							<div class="flex flex-col text-white numbers__item">
+								<span class="text-h5-space font-space lg:text-h4-space">100k+</span>
+								<span class="text-base-workSans lg:text-h5-space">Auctions</span>
+							</div>
+							<div class="flex flex-col text-white numbers__item">
+								<span class="text-h5-space font-space lg:text-h4-space"> 240k+ </span>
+								<span class="text-base-workSans lg:text-h5-space">Artists</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- Itemcard -->
+					<div class="w-full mt-10 md:mt-0 item__card md:col-span-6 md:pl-4">
+						<div class="item__card__image">
+							<img class="object-cover w-full max-h-52 rounded-tl-3xl rounded-tr-3xl lg:min-h-[400px]" src="src/assets/items/item1.png" alt="item" />
+						</div>
+						<div
+							class="px-5 py-6 transition-all duration-500 cursor-pointer item__card__content bg-background-secondary rounded-bl-3xl rounded-br-3xl hover:bg-blueaccent">
+							<h2 class="text-white text-h5-workSans">Digital Art</h2>
+
+							<div class="flex items-center gap-4 mt-2 user__image">
+								<img class="rounded-full size-6" src="src/assets/avatars/avatar1.png" alt="user" />
+								<span class="text-white text-base-workSanst">Animakid</span>
+							</div>
+						</div>
+					</div>
+
+					<a href="#" class="w-full mt-10 md:hidden bg-calltoaction btn btn--secondary btn--main">
 						<img src="src/assets/rocketLaunch.svg" alt="icon" />
 						<span>Get Started</span>
 					</a>
+
+					<div class="flex items-center justify-between w-full gap-8 numbers md:hidden">
+						<div class="flex flex-col mt-10 text-white numbers__item">
+							<span class="text-h5-space font-space">240k+</span>
+							<span class="text-base-workSans">Total Sale</span>
+						</div>
+						<div class="flex flex-col mt-10 text-white numbers__item">
+							<span class="text-h5-space font-space">100k+</span>
+							<span class="text-base-workSans">Auctions</span>
+						</div>
+						<div class="flex flex-col mt-10 text-white numbers__item">
+							<span class="text-h5-space font-space"> 240k+ </span>
+							<span class="text-base-workSans">Artists</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
