@@ -78,3 +78,27 @@ body {
 	font-weight: 400;
 	font-style: normal;
 }
+
+.item__card__image {
+	@apply overflow-hidden;
+
+	img {
+		animation-duration: 20s;
+		animation-name: growshrink;
+		animation-iteration-count: infinite;
+	}
+}
+
+@keyframes growshrink {
+	20%,
+	75% {
+		transform: scale(1.1);
+		/* filter: opacity(0.2); */
+		filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(180deg);
+	}
+
+	50% {
+		transform: scale(1);
+		/* filter: opacity(1); */
+	}
+}
