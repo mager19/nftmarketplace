@@ -33,6 +33,10 @@ body {
 	.btn--primary {
 		@apply border-4 rounded-xl h-17 text-h5-workSans border-calltoaction;
 	}
+
+	.btn--outline {
+		@apply h-16 font-normal bg-transparent border-2 rounded-3xl text-button border-calltoaction;
+	}
 }
 
 .slideout-menu {

@@ -12,7 +12,7 @@ module.exports = {
           "DEFAULT": '#2B2B2B',
           'secondary': '#3B3B3B',
         },
-        'caption': '#858584',
+        'captioncolor': '#858584',
         'text': '#FFFFFF',
         'calltoaction': '#A259FF',
         'blueaccent': '#377DF7',
