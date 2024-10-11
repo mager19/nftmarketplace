@@ -32,4 +32,31 @@ document.addEventListener("DOMContentLoaded", function () {
             this.panel.classList.remove("panel-open");
             this.panel.removeEventListener("click", close);
         });
+
+    const element = document.querySelectorAll(".titleSection");
+    let index = 0
+    let options = {
+        rootMargin: '250px 0',
+        threshold: 0.5 // El 50% del elemento debe estar visible para disparar el callback
+    };
+
+    const observer = new IntersectionObserver((entries, observer, options) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const animationClass = index % 2 === 0 ? "u--fadeInLeft" : "u--fadeInRight";
+                // Espera 2 segundos y luego asigna la clase de animación
+                setTimeout(() => {
+                    entry.target.classList.add(animationClass);// Usa entry.target para referirte al elemento específico
+                }, 1500); // Espera 2 segundos
+                index++;
+
+                observer.unobserve(entry.target);
+            }
+        });
+    });
+
+    // Observa el elemento
+    element.forEach((element) => {
+        observer.observe(element);
+    });
 });

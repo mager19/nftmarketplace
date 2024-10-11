@@ -85,7 +85,8 @@
 				<div
 					class="grid w-full grid-cols-1 px-8 py-10 mx-auto md:px-4 md:py-20 md:gap-0 place-items-start place-content-between md:grid-cols-12 hero lg:w-full xl:w-11/12">
 					<div class="md:col-span-6 hero__content">
-						<h1 class="tracking-normal text-white text-h4-workSans md:text-h3-workSans font-workSans md:max-w-[300px] lg:text-h1-workSans lg:max-w-md">
+						<h1
+							class="tracking-normal text-white text-h4-workSans md:text-h3-workSans font-workSans md:max-w-[300px] lg:text-h1-workSans lg:max-w-md u--slideLeft">
 							Discover Digital Art & Collect NFTs
 						</h1>
 						<p class="mt-3 font-light text-white md:mt-5 text-base-workSans font-workSans lg:text-body-workSans lg:max-w-lg">
@@ -216,7 +217,7 @@
 						</div>
 
 						<!-- item__collection -->
-						<div class="item__collection">
+						<div class="item__collection md:last:hidden lg:last:block">
 							<div class="flex flex-wrap gap-4 my-10 lg:my-16 item__collection__card">
 								<div class="w-full overflow-hidden cursor-pointer item__collection__card__image">
 									<img
@@ -267,7 +268,7 @@
 						<div
 							class="w-full transition-all duration-500 ease-linear cursor-pointer top__creators__grid__item bg-background-secondary rounded-2xl group hover:bg-blueaccent xl:relative">
 							<div class="flex items-center gap-5 p-5 xl:flex-wrap xl:justify-center">
-								<div class="item__image">
+								<div class="relative item__image xl:static">
 									<img class="object-cover mx-auto rounded-full size-16 xl:size-28" src="src/assets/avatars/avatar1.png" alt="user" />
 
 									<div
@@ -287,7 +288,7 @@
 						<div
 							class="w-full transition-all duration-500 ease-linear cursor-pointer top__creators__grid__item bg-background-secondary rounded-2xl group hover:bg-blueaccent xl:relative">
 							<div class="flex items-center gap-5 p-5 xl:flex-wrap xl:justify-center">
-								<div class="relative item__image lg:static">
+								<div class="relative item__image xl:static">
 									<img class="object-cover rounded-full size-16 xl:size-28" src="src/assets/avatars/avatar2.png" alt="user" />
 
 									<div
@@ -702,7 +703,7 @@
 								class="overflow-hidden transition-all duration-300 ease-linear cursor-pointer category__item bg-background-secondary group rounded-3xl hover:bg-calltoaction">
 								<div class="relative overflow-hidden image">
 									<img
-										class="object-cover object-center w-full h-[238px] lg:h-60 transition-all duration-1000 ease-in-out hover:transform hover:scale-110 cursor-pointer"
+										class="object-cover object-center w-full h-[238px] lg:h-60 transition-all duration-1000 ease-in-out hover:transform group-hover:scale-110 cursor-pointer"
 										src="src/assets/items/item7.png"
 										alt="category" />
 								</div>
@@ -717,15 +718,15 @@
 									</div>
 									<div class="flex items-center justify-between more__info mt-7">
 										<div class="price">
-											<p class="flex flex-col font-light text-captioncolor text-base-workSans font-space xl:text-body-workSans group-hover:text-white">
+											<p class="flex flex-col font-light text-captioncolor text-base-workSans font-space xl:text-base group-hover:text-white">
 												Price:
-												<span class="flex mt-2 text-white">34.53 ETH</span>
+												<span class="flex mt-2 text-white xl:text-body-workSans">34.53 ETH</span>
 											</p>
 										</div>
 										<div class="other">
-											<p class="flex flex-col font-light text-captioncolor text-base-workSans font-space xl:text-body-workSans group-hover:text-white">
+											<p class="flex flex-col font-light text-captioncolor text-base-workSans font-space xl:text-base group-hover:text-white">
 												Highest Bid
-												<span class="flex mt-2 text-white">0.33 wETH</span>
+												<span class="flex mt-2 text-white xl:text-body-workSans">0.33 wETH</span>
 											</p>
 										</div>
 									</div>
@@ -737,7 +738,7 @@
 								class="overflow-hidden transition-all duration-300 ease-linear cursor-pointer category__item bg-background-secondary group rounded-3xl hover:bg-calltoaction">
 								<div class="relative overflow-hidden image">
 									<img
-										class="object-cover object-center w-full h-[238px] lg:h-60 transition-all duration-1000 ease-in-out hover:transform hover:scale-110 cursor-pointer"
+										class="object-cover object-center w-full h-[238px] lg:h-60 transition-all duration-1000 ease-in-out hover:transform group-hover:scale-110 cursor-pointer"
 										src="src/assets/items/item8.png"
 										alt="category" />
 								</div>
@@ -752,27 +753,27 @@
 									</div>
 									<div class="flex items-center justify-between more__info mt-7">
 										<div class="price">
-											<p class="flex flex-col font-light text-captioncolor text-base-workSans font-space xl:text-body-workSans group-hover:text-white">
+											<p class="flex flex-col font-light text-captioncolor text-base-workSans font-space group-hover:text-white">
 												Price:
-												<span class="flex mt-2 text-white">34.53 ETH</span>
+												<span class="flex mt-2 text-white xl:text-body-workSans">34.53 ETH</span>
 											</p>
 										</div>
 										<div class="other">
-											<p class="flex flex-col font-light text-captioncolor text-base-workSans font-space xl:text-body-workSans group-hover:text-white">
+											<p class="flex flex-col font-light text-captioncolor text-base-workSans font-space xl:text-base group-hover:text-white">
 												Highest Bid
-												<span class="flex mt-2 text-white">0.33 wETH</span>
+												<span class="flex mt-2 text-white xl:text-body-workSans">0.33 wETH</span>
 											</p>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="lg:last:flex discovery__more__item md:last:hidden">
+						<div class="lg:last:block discovery__more__item md:last:hidden">
 							<div
 								class="overflow-hidden transition-all duration-300 ease-linear cursor-pointer category__item bg-background-secondary group rounded-3xl hover:bg-calltoaction">
 								<div class="relative overflow-hidden image">
 									<img
-										class="object-cover object-center w-full h-[238px] lg:h-60 transition-all duration-1000 ease-in-out hover:transform hover:scale-110 cursor-pointer"
+										class="object-cover object-center w-full h-[238px] lg:h-60 transition-all duration-1000 ease-in-out hover:transform group-hover:scale-110 cursor-pointer"
 										src="src/assets/items/item9.png"
 										alt="category" />
 								</div>
@@ -787,15 +788,15 @@
 									</div>
 									<div class="flex items-center justify-between more__info mt-7">
 										<div class="price">
-											<p class="flex flex-col font-light text-captioncolor text-base-workSans font-space xl:text-body-workSans group-hover:text-white">
+											<p class="flex flex-col font-light text-captioncolor text-base-workSans font-space xl:text-base group-hover:text-white">
 												Price:
-												<span class="flex mt-2 text-white">34.53 ETH</span>
+												<span class="flex mt-2 text-white xl:text-body-workSans">34.53 ETH</span>
 											</p>
 										</div>
 										<div class="other">
-											<p class="flex flex-col font-light text-captioncolor text-base-workSans font-space xl:text-body-workSans group-hover:text-white">
+											<p class="flex flex-col font-light text-captioncolor text-base-workSans font-space xl:text-base group-hover:text-white">
 												Highest Bid
-												<span class="flex mt-2 text-white">0.33 wETH</span>
+												<span class="flex mt-2 text-white xl:text-body-workSans">0.33 wETH</span>
 											</p>
 										</div>
 									</div>
@@ -807,8 +808,7 @@
 			</div>
 		</div>
 
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, unde molestiae odit quas consectetur a nihil quo suscipit architecto. Fugiat, rem atque
-		iusto qui quia minima voluptas totam asperiores cum.
+		<!-- Counter -->
 	</body>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
 
