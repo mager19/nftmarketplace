@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-	@apply bg-background !important;
+	@apply bg-background overflow-x-hidden !important;
 }
 
 @layer components {
@@ -32,6 +32,14 @@ body {
 
 	.btn--primary {
 		@apply border-4 rounded-xl h-17 text-h5-workSans border-calltoaction;
+	}
+
+	.btn--white {
+		@apply text-black bg-white border-white h-14 rounded-xl text-h5-workSans;
+
+		&:hover {
+			@apply text-white border-background bg-background;
+		}
 	}
 
 	.btn--outline {
@@ -161,6 +169,10 @@ body {
 	opacity: 0;
 }
 
+.timer {
+	opacity: 0;
+}
+
 @-webkit-keyframes fadeInRight {
 	0% {
 		opacity: 0;
@@ -258,4 +270,17 @@ body {
 	-o-animation: fadeInLeft 1s ease-in;
 	animation: fadeInLeft 1s ease-in;
 	opacity: 1;
+}
+
+.counter {
+	@apply bg-center bg-no-repeat bg-cover h-[590px];
+	background-image: url("assets/mashroomsMobile.jpg");
+
+	@screen md {
+		background-image: url("assets/mashroomsTablet.jpg");
+	}
+
+	@screen lg {
+		background-image: url("assets/mashrooms.jpg");
+	}
 }

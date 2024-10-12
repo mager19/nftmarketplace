@@ -59,4 +59,25 @@ document.addEventListener("DOMContentLoaded", function () {
     element.forEach((element) => {
         observer.observe(element);
     });
+
+    const timer = document.querySelector(".timer"); // Selecciona el único elemento con la clase .timer
+
+    const observer2 = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                // Aplica la animación cuando el timer es visible
+                setTimeout(() => {
+                    entry.target.classList.add("u--fadeInRight"); // Añade la clase de animación
+                }, 1500); // Espera 2 segundos
+                // Desconecta el observer ya que solo necesitas la animación una vez
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.5 // Ajusta el umbral si es necesario (0.5 = 50% visible)
+    });
+
+    // Aplica el observer al elemento .timer
+    observer2.observe(timer);
+
 });
