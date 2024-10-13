@@ -771,6 +771,10 @@ video {
   top: -5px;
 }
 
+.right-\[-1px\] {
+  right: -1px;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -842,11 +846,6 @@ video {
 .size-7 {
   width: 1.75rem;
   height: 1.75rem;
-}
-
-.size-64 {
-  width: 16rem;
-  height: 16rem;
 }
 
 .h-36 {
@@ -921,10 +920,6 @@ video {
   flex-wrap: wrap;
 }
 
-.place-content-center {
-  place-content: center;
-}
-
 .place-content-between {
   place-content: space-between;
 }
@@ -953,6 +948,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-0 {
+  gap: 0px;
+}
+
 .gap-12 {
   gap: 3rem;
 }
@@ -971,14 +970,6 @@ video {
 
 .gap-8 {
   gap: 2rem;
-}
-
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.gap-0 {
-  gap: 0px;
 }
 
 .gap-x-8 {
@@ -1023,6 +1014,15 @@ video {
   border-top-right-radius: 1.5rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
 .bg-background {
   --tw-bg-opacity: 1;
   background-color: rgb(43 43 43 / var(--tw-bg-opacity));
@@ -1036,6 +1036,15 @@ video {
 .bg-calltoaction {
   --tw-bg-opacity: 1;
   background-color: rgb(162 89 255 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-blueaccent {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 125 247 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -1052,6 +1061,10 @@ video {
      object-position: center;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
@@ -1060,24 +1073,8 @@ video {
   padding: 1.75rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
-.p-6 {
-  padding: 1.5rem;
-}
-
 .p-4 {
   padding: 1rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
-}
-
-.p-3 {
-  padding: 0.75rem;
 }
 
 .px-12 {
@@ -1118,6 +1115,11 @@ video {
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .py-4 {
@@ -1207,20 +1209,16 @@ video {
   font-weight: 600;
 }
 
-.font-normal {
-  font-weight: 400;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
 
-.leading-7 {
-  line-height: 1.75rem;
-}
-
 .leading-5 {
   line-height: 1.25rem;
+}
+
+.leading-7 {
+  line-height: 1.75rem;
 }
 
 .tracking-normal {
@@ -1233,6 +1231,11 @@ video {
 
 .tracking-wider {
   letter-spacing: 0.05em;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-captioncolor {
@@ -1437,6 +1440,26 @@ body {
   }
 }
 
+.placeholder\:text-body-workSans::-moz-placeholder {
+  font-size: 1.375rem;
+  line-height: 160%;
+}
+
+.placeholder\:text-body-workSans::placeholder {
+  font-size: 1.375rem;
+  line-height: 160%;
+}
+
+.placeholder\:text-base::-moz-placeholder {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.placeholder\:text-base::placeholder {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1460,6 +1483,16 @@ body {
 .hover\:text-calltoaction:hover {
   --tw-text-opacity: 1;
   color: rgb(162 89 255 / var(--tw-text-opacity));
+}
+
+.focus\:border-blueaccent:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(55 125 247 / var(--tw-border-opacity));
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .group:hover .group-hover\:scale-110 {
@@ -1507,6 +1540,10 @@ body {
     height: 330px;
   }
 
+  .md\:h-\[280px\] {
+    height: 280px;
+  }
+
   .md\:w-2\/5 {
     width: 40%;
   }
@@ -1523,6 +1560,10 @@ body {
     max-width: 100%;
   }
 
+  .md\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
   .md\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
@@ -1531,16 +1572,16 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .md\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:place-items-center {
+    place-items: center;
   }
 
   .md\:gap-0 {
@@ -1549,6 +1590,15 @@ body {
 
   .md\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .md\:rounded-3xl {
+    border-radius: 1.5rem;
+  }
+
+  .md\:bg-background-secondary {
+    --tw-bg-opacity: 1;
+    background-color: rgb(59 59 59 / var(--tw-bg-opacity));
   }
 
   .md\:px-4 {
@@ -1585,6 +1635,14 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
+  .lg\:relative {
+    position: relative;
+  }
+
   .lg\:my-16 {
     margin-top: 4rem;
     margin-bottom: 4rem;
@@ -1596,6 +1654,10 @@ body {
 
   .lg\:mt-8 {
     margin-top: 2rem;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
 
   .lg\:flex {
@@ -1615,6 +1677,18 @@ body {
     height: 15rem;
   }
 
+  .lg\:h-\[310px\] {
+    height: 310px;
+  }
+
+  .lg\:h-\[350px\] {
+    height: 350px;
+  }
+
+  .lg\:h-12 {
+    height: 3rem;
+  }
+
   .lg\:min-h-\[400px\] {
     min-height: 400px;
   }
@@ -1629,6 +1703,34 @@ body {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-\[400px\] {
+    width: 400px;
+  }
+
+  .lg\:w-\[200px\] {
+    width: 200px;
+  }
+
+  .lg\:w-\[150px\] {
+    width: 150px;
+  }
+
+  .lg\:w-\[180px\] {
+    width: 180px;
+  }
+
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
+  .lg\:w-10\/12 {
+    width: 83.333333%;
+  }
+
+  .lg\:w-8\/12 {
+    width: 66.666667%;
   }
 
   .lg\:max-w-lg {
@@ -1651,8 +1753,17 @@ body {
     gap: 1.5rem;
   }
 
-  .lg\:p-9 {
-    padding: 2.25rem;
+  .lg\:gap-12 {
+    gap: 3rem;
+  }
+
+  .lg\:gap-16 {
+    gap: 4rem;
+  }
+
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .lg\:py-20 {
@@ -1665,19 +1776,35 @@ body {
     padding-bottom: 2rem;
   }
 
-  .lg\:px-12 {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
   .lg\:py-9 {
     padding-top: 2.25rem;
     padding-bottom: 2.25rem;
   }
 
-  .lg\:px-16 {
-    padding-left: 4rem;
-    padding-right: 4rem;
+  .lg\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .lg\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .lg\:text-base-workSans {
+    font-size: 1rem;
+    line-height: 140%;
+    font-weight: 400;
   }
 
   .lg\:text-body-workSans {
@@ -1708,20 +1835,6 @@ body {
   .lg\:text-h5-workSans {
     font-size: 1.375rem;
     line-height: 160%;
-  }
-
-  .lg\:text-base-workSans {
-    font-size: 1rem;
-    line-height: 140%;
-    font-weight: 400;
-  }
-
-  .lg\:font-medium {
-    font-weight: 500;
-  }
-
-  .lg\:font-normal {
-    font-weight: 400;
   }
 
   .lg\:font-light {

@@ -910,6 +910,44 @@
 					</div>
 				</div>
 			</div>
+
+			<!-- Newsletter -->
+			<div class="py-10 mx-auto md:px-4 xl:w-11/12 lg:py-20">
+				<div
+					class="grid grid-cols-1 gap-8 px-6 py-8 mx-auto lg:gap-16 md:grid-cols-2 newsletter md:bg-background-secondary md:place-items-center md:rounded-3xl lg:px-12 lg:py-12">
+					<div class="w-full newsletter__image rounded-2xl">
+						<img class="w-full object-cover md:h-[280px] lg:h-[350px] rounded-3xl" src="src/assets/astro.png" alt="astro" />
+					</div>
+
+					<div class="newsletter__info">
+						<!-- titleSection -->
+						<div class="flex flex-wrap items-center justify-between w-full titleSection">
+							<div class="info">
+								<h3 class="text-white text-h4-workSans lg:text-h3-workSans font-workSans">Join our weekly digest</h3>
+								<p class="flex font-light leading-7 text-white font-workSans text-base-workSans lg:text-body-workSans lg:mt-2 max-w-96 xl:max-w-max">
+									Get exclusive promotions & updates straight to your inbox.
+								</p>
+							</div>
+						</div>
+
+						<div class="form">
+							<form action="#" method="post" class="relative flex flex-wrap items-center justify-between w-full mt-10">
+								<input
+									type="email"
+									name="email"
+									placeholder="Enter your email"
+									class="w-full px-5 py-3 text-black border border-white rounded-3xl focus:outline-none focus:border-blueaccent placeholder:text-base lg:h-12" />
+								<button
+									type="submit"
+									class="w-full px-5 py-3 mt-4 rounded-full btn btn--main focus:outline-none focus:border-blueaccent lg:absolute lg:w-[180px] top-0 right-[-1px] z-50 lg:mt-0 lg:h-12">
+									<img src="src/assets/envelopeSimple.svg" alt="icon" />
+									<span>Subscribe</span>
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
