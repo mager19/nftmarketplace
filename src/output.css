@@ -860,6 +860,10 @@ video {
   height: 100%;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .max-h-40 {
   max-height: 10rem;
 }
@@ -932,6 +936,10 @@ video {
   place-items: center;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-end {
   align-items: flex-end;
 }
@@ -970,6 +978,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-7 {
+  gap: 1.75rem;
 }
 
 .gap-x-8 {
@@ -1040,6 +1052,11 @@ video {
 
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .object-cover {
@@ -1122,6 +1139,11 @@ video {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-17 {
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
 }
 
 .pl-6 {
@@ -1233,6 +1255,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#ccc\] {
+  --tw-text-opacity: 1;
+  color: rgb(204 204 204 / var(--tw-text-opacity));
 }
 
 .blur-\[2px\] {
@@ -1462,6 +1489,11 @@ body {
   color: rgb(162 89 255 / var(--tw-text-opacity));
 }
 
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .focus\:border-blueaccent:focus {
   --tw-border-opacity: 1;
   border-color: rgb(55 125 247 / var(--tw-border-opacity));
@@ -1519,6 +1551,10 @@ body {
 
   .md\:h-\[330px\] {
     height: 330px;
+  }
+
+  .md\:h-auto {
+    height: auto;
   }
 
   .md\:w-2\/5 {
@@ -1678,6 +1714,34 @@ body {
     width: 100%;
   }
 
+  .lg\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .lg\:w-3\/12 {
+    width: 25%;
+  }
+
+  .lg\:w-9\/12 {
+    width: 75%;
+  }
+
+  .lg\:w-2\/3 {
+    width: 66.666667%;
+  }
+
+  .lg\:w-10\/12 {
+    width: 83.333333%;
+  }
+
+  .lg\:w-4\/12 {
+    width: 33.333333%;
+  }
+
+  .lg\:w-8\/12 {
+    width: 66.666667%;
+  }
+
   .lg\:max-w-lg {
     max-width: 32rem;
   }
@@ -1690,6 +1754,10 @@ body {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:gap-16 {
     gap: 4rem;
   }
@@ -1700,6 +1768,14 @@ body {
 
   .lg\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .lg\:gap-0 {
+    gap: 0px;
+  }
+
+  .lg\:gap-4 {
+    gap: 1rem;
   }
 
   .lg\:px-12 {
@@ -1730,6 +1806,10 @@ body {
   .lg\:py-9 {
     padding-top: 2.25rem;
     padding-bottom: 2.25rem;
+  }
+
+  .lg\:pl-12 {
+    padding-left: 3rem;
   }
 
   .lg\:text-base-workSans {
