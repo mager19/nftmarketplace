@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet" />
+		<link href="./src/output.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!-- mobile menu -->
+		<nav id="menu" class="px-4 py-12 bg-background">
+			<ul class="flex flex-col gap-8 xl:gap-8">
+				<li>
+					<a class="px-4 text-white text-base-workSans hover:text-calltoaction" href="#">Marketplace</a>
+				</li>
+				<li>
+					<a class="px-4 text-white text-base-workSans hover:text-calltoaction" href="#">Rankings</a>
+				</li>
+				<li>
+					<a class="px-4 text-white text-base-workSans hover:text-calltoaction" href="#">Collect a wallet</a>
+				</li>
+				<li>
+					<a class="text-base-workSans btn btn--tertary" href="signup.html">
+						<img src="src/assets/user.svg" alt="user" />
+						<span>Sign Up</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+
+		<div id="panel" class="bg-background">
+			<!-- header -->
+			<div class="flex items-center justify-between w-full px-8 py-4 mx-auto lg:py-8 md:py-5 bg-background">
+				<div class="w-auto lg:w-1/4 xl:w-1/5 logo">
+					<a href="/index.html">
+						<img class="w-1/2 md:w-2/5 lg:w-full" src="src/assets/logo.png" alt="logo" />
+					</a>
+				</div>
+
+				<nav class="hidden w-2/3 main__menu xl:w-auto lg:flex lg:w-auto">
+					<ul class="flex items-center gap-4 xl:gap-8">
+						<li>
+							<a class="px-4 text-white text-base-workSans hover:text-calltoaction" href="#">Marketplace</a>
+						</li>
+						<li>
+							<a class="px-4 text-white text-base-workSans hover:text-calltoaction" href="#">Rankings</a>
+						</li>
+						<li>
+							<a class="px-4 text-white text-base-workSans hover:text-calltoaction" href="#">Collect a wallet</a>
+						</li>
+						<li>
+							<a class="text-base-workSans btn btn--secondary xl:btn--primart" href="signup.html">
+								<img src="src/assets/user.svg" alt="user" />
+								<span>Sign Up</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="w-auto mobile__menu lg:hidden">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M3 12C3 11.5858 3.33579 11.25 3.75 11.25H20.25C20.6642 11.25 21 11.5858 21 12C21 12.4142 20.6642 12.75 20.25 12.75H3.75C3.33579 12.75 3 12.4142 3 12Z"
+							fill="white" />
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M3 6C3 5.58579 3.33579 5.25 3.75 5.25H15C15.4142 5.25 15.75 5.58579 15.75 6C15.75 6.41421 15.4142 6.75 15 6.75H3.75C3.33579 6.75 3 6.41421 3 6Z"
+							fill="white" />
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M3 18C3 17.5858 3.33579 17.25 3.75 17.25H15C15.4142 17.25 15.75 17.5858 15.75 18C15.75 18.4142 15.4142 18.75 15 18.75H3.75C3.33579 18.75 3 18.4142 3 18Z"
+							fill="white" />
+					</svg>
+				</div>
+			</div>
+
+			<!-- create account -->
+			<div class="w-screen mx-auto">
+				<div class="mx-auto md:px-4 md:flex lg:gap-12 lg:px-0">
+					<div class="w-full md:w-1/2 imageFilters">
+						<img class="object-cover md:hidden" src="src/assets/signupMobile.png" alt="image" />
+						<img class="hidden object-cover h-full md:flex" src="src/assets/signupDesktop.jpg" alt="image" />
+					</div>
+					<div class="w-full px-8 py-10 md:w-1/2 md:py-20">
+						<!-- titleSection -->
+						<div class="w-full titleSection">
+							<h3 class="text-white text-h4-workSans lg:text-h2-workSans font-workSans lg:font-semibold">Create Account</h3>
+							<p class="text-white font-workSans text-base-workSans lg:text-body-workSans lg:mt-2 lg:w-9/12">
+								Welcome! enter your details and start creating, collecting and selling NFTs.
+							</p>
+						</div>
+
+						<form action="#" method="post" class="relative flex flex-wrap items-center justify-between w-full gap-4 mt-10 lg:w-8/12">
+							<input
+								type="text"
+								name="text"
+								placeholder="Username"
+								class="w-full px-5 py-3 text-black border border-white rounded-3xl focus:outline-none focus:border-blueaccent placeholder:text-base lg:h-12" />
+							<input
+								type="email"
+								name="email"
+								placeholder="Email Address"
+								class="w-full px-5 py-3 text-black border border-white rounded-3xl focus:outline-none focus:border-blueaccent placeholder:text-base lg:h-12" />
+
+							<input
+								type="password"
+								name="password"
+								placeholder="Password"
+								class="w-full px-5 py-3 text-black border border-white rounded-3xl focus:outline-none focus:border-blueaccent placeholder:text-base lg:h-12" />
+
+							<input
+								type="password"
+								name="confirmpassword"
+								placeholder="Confirm Password"
+								class="w-full px-5 py-3 text-black border border-white rounded-3xl focus:outline-none focus:border-blueaccent placeholder:text-base lg:h-12" />
+
+							<button
+								type="submit"
+								class="w-full px-5 py-3 mt-4 rounded-full btn btn--main focus:outline-none focus:border-blueaccent lg:w-[180px] top-0 right-[-1px] z-50 lg:mt-0 lg:h-12">
+								<span>Create Account</span>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<footer class="bg-background-secondary">
+				<div class="container mx-auto">
+					<div class="flex flex-wrap justify-between py-10 mx-auto lg:grid-cols-2 gap-7 px-7 lg:gap-0">
+						<div class="flex flex-col items-start gap-5 footer__col lg:w-4/12">
+							<img class="w-2/3 md:w-2/5 lg:w-9/12" src="src/assets/logo.png" alt="logo" />
+							<p class="font-workSans text-base-workSans text-[#ccc] font-light">NFT marketplace UI created with Anima for Figma.</p>
+
+							<a href="#" class="font-workSans text-base-workSans text-[#ccc] font-light inline-flex hover:text-white">Join our community</a>
+							<img class="object-contain h-8 w-1/w" src="src/assets/icons/icons.png" alt="icon" />
+						</div>
+
+						<div class="flex flex-wrap justify-between lg:w-8/12 lg:pl-12">
+							<div class="flex flex-wrap gap-5 footer__col">
+								<h5 class="font-medium text-white text-h5-space font-space">Explore</h5>
+								<ul class="flex flex-col w-full gap-4">
+									<li class="font-workSans text-base-workSans text-[#ccc] font-light">Marketplace</li>
+									<li class="font-workSans text-base-workSans text-[#ccc] font-light">Rankings</li>
+									<li class="font-workSans text-base-workSans text-[#ccc] font-light">Connect a Wallet</li>
+								</ul>
+							</div>
+
+							<div class="flex flex-col gap-5 mt-12 footer__col lg:mt-0">
+								<h5 class="font-medium text-white text-h5-space font-space">Join our weekly digest</h5>
+								<p class="font-workSans text-base-workSans text-[#ccc] font-light">Get exclusive promotions & updates straight to your inbox.</p>
+
+								<div class="form">
+									<form action="#" method="post" class="relative flex flex-wrap items-center justify-between w-full">
+										<input
+											type="email"
+											name="email"
+											placeholder="Enter your email"
+											class="w-full px-5 py-3 text-black border border-white rounded-3xl focus:outline-none focus:border-blueaccent placeholder:text-base lg:h-12" />
+										<button
+											type="submit"
+											class="w-full px-5 py-3 mt-4 rounded-full btn btn--main focus:outline-none focus:border-blueaccent lg:absolute lg:w-[180px] top-0 right-[-1px] z-50 lg:mt-0 lg:h-12">
+											<img src="src/assets/envelopeSimple.svg" alt="icon" />
+											<span>Subscribe</span>
+										</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+
+	<script src="src/base.js"></script>
+</html>

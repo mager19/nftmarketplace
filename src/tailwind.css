@@ -109,6 +109,14 @@ body {
 	}
 }
 
+.imageFilters {
+	img {
+		animation-duration: 20s;
+		animation-name: onlyfilters;
+		animation-iteration-count: infinite;
+	}
+}
+
 @keyframes growshrink {
 	20%,
 	75% {
@@ -120,6 +128,17 @@ body {
 	50% {
 		transform: scale(1);
 		/* filter: opacity(1); */
+	}
+}
+
+@keyframes onlyfilters {
+	20%,
+	75% {
+		filter: sepia(100%) saturate(300%) brightness(70%) hue-rotate(180deg);
+	}
+
+	50% {
+		filter: sepia(0) saturate(100%) brightness(100%) hue-rotate(0deg);
 	}
 }
 

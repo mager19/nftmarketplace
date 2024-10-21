@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let panel = document.getElementById("panel");
     let menu = document.getElementById("menu");
 
+
     var slideout = new Slideout({
         panel: panel,
         menu: menu,
@@ -56,9 +57,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Observa el elemento
-    element.forEach((element) => {
-        observer.observe(element);
-    });
+    if (element) {
+        element.forEach((element) => {
+            observer.observe(element);
+        });
+    }
 
     const timer = document.querySelector(".timer"); // Selecciona el único elemento con la clase .timer
 
@@ -78,6 +81,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     // Aplica el observer al elemento .timer
-    observer2.observe(timer);
+    if (timer) {
+        observer2.observe(timer);
+    }
 
 });
